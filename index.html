@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- PERTEMUAN 2: Menambah What I Do (grid 3 kolom) dan About Me (grid 2 kolom) -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Baris ini membuat website tampil benar di layar HP -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiel Portofolio | Web Developer & Graphic Designer</title>
+  <!-- Menghubungkan file CSS (harus satu folder dengan index.html) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Kontainer utama: kotak putih di tengah halaman -->
+  <div class="page">
+
+    <!-- ==================== NAVBAR SECTION ==================== -->
+    <!-- Ganti nama di kiri dan teks menu di kanan sesuai kebutuhan.
+         href="#home" artinya meloncat ke bagian yang punya id="home". -->
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="#home" class="logo">YEHEZKIEL APRIESTA</a>
+        <nav class="nav-links">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT ME</a>
+          <a href="#work">WORK</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================== HOME SECTION ==================== -->
+    <!-- AWAL bagian Home -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hi There!</h1>
+        <span class="short-line"></span>
+        <h2>I'm Yehezkiel Apriesta</h2>
+        <p class="label">Christian Education Teacher &amp; Graphic Designer</p>
+        <p class="hero-desc">
+          I build and colaborate between Theology and Tecnology for businesses and also a education.
+        </p>
+        <div class="buttons">
+          <!-- Ganti email di bawah dengan email Anda -->
+          <a href="mailto:yehezkielnanga@gmail.com" class="btn">HIRE ME</a>
+          <a href="#work" class="btn">VIEW MY WORK</a>
+        </div>
+      </div>
+
+      <div class="hero-photo photo-frame">
+        <!-- GANTI FOTO PROFIL: simpan foto di folder images/ lalu ubah nama file di src.
+             Contoh: src="images/foto-saya.jpg" -->
+        <img src="images/Profile.jpg.jpg" alt="Foto Profil">
+      </div>
+    </section>
+    <!-- AKHIR bagian Home -->
+
+    <!-- ==================== WHAT I DO SECTION ==================== -->
+    <section class="services">
+      <h2 class="section-title">What I Do</h2>
+      <span class="short-line center-line"></span>
+
+      <div class="services-grid">
+        <!-- Layanan 1. Ganti gambar/ikon di src (contoh: images/service1.jpg) -->
+        <div class="service">
+          <div class="placeholder service-img">
+            <img src="images/Profile.jpg.jpg" alt="Web Development">
+          </div>
+          <h3>WEB DEVELOPMENT</h3>
+          <p>I can build a minimalize website using HTML and collaborate it with AI</p>
+        </div>
+
+        <!-- Layanan 2 -->
+        <div class="service">
+          <div class="placeholder service-img">
+            <img src="images/Profile.jpg.jpg" alt="Website Setup">
+          </div>
+          <h3>EDITING</h3>
+          <p>I can using some design app like Canva and video editing design like Capcut .</p>
+        </div>
+
+        <!-- Layanan 3 -->
+        <div class="service">
+          <div class="placeholder service-img">
+            <img src="images/Profile.jpg.jpg" alt="Design to Code">
+          </div>
+          <h3>LANGUAGE</h3>
+          <p>I can speak english very well and fluent, including Greek and Hebrew for Bible interpretation </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section class="about-section" id="about">
+      <div class="about-photo photo-frame">
+        <!-- GANTI FOTO ABOUT ME: ubah nama file di src -->
+        <img src="images/Profile.jpg.jpg" alt="Foto About Me">
+      </div>
+
+      <div class="about-text">
+        <h2 class="about-title">ABOUT ME</h2>
+        <span class="short-line"></span>
+        <p>
+          I'm a Christian education teacher and also a graphic designer with 4+ years of experience.
+          I specialize in Christian education also like to design and editing a video .
+        </p>
+        <!-- Daftar keahlian: ganti teks di dalam <li> -->
+        <ul class="check-list">
+          <li>4+ years experience in Theology seminary</li>
+          <li>HTML, Canva, Word, Capcut</li>
+          <li>Can speak english fluent</li>
+        </ul>
+      </div>
+    </section>
+    <!-- ====================FORTOFOLIO SECTION==================== -->
+     <section class="portfolio" id="work">
+      <h2 class="section-title">PORTFOLIO</h2>
+      <span class="short-line center-line"></span>
+
+      <div class="portfolio-grid">
+        
+        <a href="https://canva.link/gyug37uhlnkeo06" class="project">
+          <div class="placeholder project-img">
+            <img src="images/Profile.jpg.jpg" alt="Website Project 1">
+          </div>
+          <h3>WEBSITE PROJECT 1</h3>
+        </a>
+        <a href="https://canva.link/gyug37uhlnkeo06" class="project">
+          <div class="placeholder project-img">
+            <img src="images/Profile.jpg.jpg" alt="Website Project 2">
+          </div>
+          <h3>WEBSITE PROJECT 2</h3>
+        </a>
+         <a href="https://canva.link/gyug37uhlnkeo06" class="project">
+          <div class="placeholder project-img">
+            <img src="Image.jpg.jpg" alt="Website Project 3">
+          </div>
+          <h3>WEBSITE PROJECT 3</h3>
+        </a>
+         <a href="https://canva.link/gyug37uhlnkeo06" class="project">
+          <div class="placeholder project-img">
+            <img src="Image.jpg.jpg" alt="Website Project 4">
+          </div>
+          <h3>WEBSITE PROJECT 4</h3>
+        </a>
+      </div>
+
+      <div class="center-button">
+        <a href="https://canva.link/gyug37uhlnkeo06" class="btn">VIEW MY PROJECTS</a>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills">
+      <h2 class="section-title">SKILLS</h2>
+      <span class="short-line center-line"></span>
+
+      <div class="skills-wrapper">
+        <!-- Tombol panah: hanya dekorasi (tidak berfungsi) -->
+        <span class="arrow arrow-left">&#8249;</span>
+
+        <div class="skills-grid">
+          <!-- Ganti simbol ikon (&#9638; dll.) dan teks sesuai keahlian Anda -->
+          <div class="skill-card">
+            <span class="skill-icon">&#9638;</span>
+            <h3>WEB DEVELOPMENT</h3>
+            <p>HTML | CSS | WORDPRESS | ELEMENTOR | ASTRA | DIVI</p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">&#9881;</span>
+            <h3>WEBSITE SETUP</h3>
+            <p>SSL | CPANEL | FTP | DOMAINS | WEB MAINTENANCE</p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">&lt;/&gt;</span>
+            <h3>DESIGN TO CODE</h3>
+            <p>PSD TO HTML &amp; WP | FIGMA TO HTML &amp; WP</p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">&#9998;</span>
+            <h3>GRAPHIC DESIGNING</h3>
+            <p>SOCIAL MEDIA POSTER | WEB MOCKUPS | COLOR PALETTES | TOOLS: FIGMA &amp; CANVA</p>
+          </div>
+        </div>
+
+        <span class="arrow arrow-right">&#8250;</span>
+      </div>
+    </section>
+
+    <!-- ==================== CALL TO ACTION SECTION ==================== -->
+    <section class="cta">
+      <h2>HAVE A PROJECT IN MIND? LET'S BUILD SOMETHING GREAT TOGETHER.</h2>
+      <div class="buttons">
+        <a href="#contact" class="btn btn-white">HIRE ME</a>
+        <a href="#work" class="btn btn-white">VIEW MY WORK</a>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="footer" id="contact">
+      <div class="footer-left">
+        <h3 class="footer-name">YEHEZKIEL APRIESTA</h3>
+        <p class="label">Web Developer &amp; Graphic Designer</p>
+        <p class="copyright">&copy; 2026 YEHEZKIEL APRIESTA. ALL RIGHTS RESERVED.</p>
+      </div>
+
+      <!-- Informasi kontak: ganti email dan URL di href, serta teks di dalam <a> -->
+      <div class="footer-right">
+        <p><span class="icon">&#9993;</span>
+          <a href="mailto:yehezkielnanga@gmail.com">yehezkielnanga@gmail.com</a>
+        </p>
+        <p><span class="icon">IG</span>
+          <a href="https://www.instagram.com/" target="_blank">@yz_kiel77</a></p>
+        <p><span class="icon">P</span>
+          <a href="https://in.pinterest.com/yehezkielappiesoft/" target="_blank">https://in.pinterest.com/yehezkielappiesoft/</a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
